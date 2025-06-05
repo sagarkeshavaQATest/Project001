@@ -2,12 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.Seleniumgriddemo">
+      <class name="testCases.TC003_LoginDDT">
         <methods>
-          <include name="HomePageCheck"/>
+          <include name="verify_loginDDT" invocation-numbers="4 5"/>
+          <include name="setup"/>
+          <include name="tearout"/>
         </methods>
-      </class> <!-- testCases.Seleniumgriddemo -->
+      </class> <!-- testCases.TC003_LoginDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
