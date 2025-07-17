@@ -22,16 +22,26 @@ Automated functional and regression testing using TestNG, Selenium WebDriver, an
 
 sagarkeshavaQATest/
 ├── crossbrowsertesting.xml # Suite configuration for CBT execution
+
 ├── ddt.xml # Data-driven tests
+
 ├── griddemo.xml # Grid/remote execution suite
+
 ├── grouping.xml # Test grouping suite
+
 ├── mastersuite11.xml # Master aggregated suite
+
 ├── para.xml # Parallel execution suite
+
 ├── pom.xml # Maven project file
+
 ├── src/
 │ └── test/ # Test code packages
+
 ├── testdata/ # CSV/Excel/data files
+
 ├── test-output/ # Auto-generated TestNG results
+
 └── target/ # Maven build output
 
 ## 🔧 Installation & Setup
