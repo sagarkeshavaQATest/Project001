@@ -1,6 +1,6 @@
 # 🧪 sagarkeshavaQATest
 
-**A Test Automation Suite for [Your App/Project Name]**
+**A Test Automation Suite for [Project001]**
 
 Automated functional and regression testing using TestNG, Selenium WebDriver, and Data‑Driven Testing (DDT). Includes cross-browser and grid/demo suite configurations.
 
