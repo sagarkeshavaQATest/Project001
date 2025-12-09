@@ -1,53 +1,83 @@
-# 🧪 sagarkeshavaQATest
+# Automated Web Testing Framework
 
-**A Test Automation Suite for [Project001]**
+## Project Overview
 
-Automated functional and regression testing using TestNG, Selenium WebDriver, and Data‑Driven Testing (DDT). Includes cross-browser and grid/demo suite configurations.
+This project is a complete end-to-end **Web Automation Testing Framework** built using:
+
+- **Selenium WebDriver**
+- **Java**
+- **Cucumber (BDD)**
+- **TestNG**
+- **Maven**
+
+I automated major user journeys such as **Signup, Login, Product Search**, and flow validations.  
+A **hybrid automation framework** was designed using Page Object Model (POM), reusable utility classes, Maven build integration, and structured test suites.
+
+The project also includes an integrated **CI/CD pipeline using Jenkins**, enabling:
+
+- Continuous execution  
+- Scheduled nightly runs  
+- Automatic ExtentReports generation  
+- Screenshots on failure  
+- Email notifications after every build  
 
 ---
 
-## 🚀 Features
+## Project Structure
 
-- Organised TestNG suites for:
-  - Functional, grouping, parallel, DDT, and grid-based tests
-- Cross-browser execution via `crossbrowsertesting.xml`
-- Integration with remote grid setups (`griddemo.xml`)
-- Data‑Driven Testing through `ddt.xml`
-- Reporting via TestNG’s `test-output` folder
-- Sample test data under “testdata” directory
+- `.settings/` – Workspace configuration  
+- `Logs/` – Updated logs for debugging and monitoring  
+- `src/test/` – Test scripts, step definitions, utilities, and POM classes  
+- `target/` – Compiled output and framework-generated files  
+- `test-output/` – TestNG reports and screenshots  
+- `testdata/` – Data-driven input files (Excel/JSON)  
+- `.classpath` – Eclipse classpath configuration  
+- `.project` – Eclipse project configuration  
+- `README.md` – Project documentation  
+- `TEST_PLAN.md` – Detailed test planning documentation  
+- `crossbrowsertesting.xml` – XML suite for Cross-Browser execution  
+- `ddt.xml` – Suite for Data-Driven Testing  
+- `griddemo.xml` – Suite for Selenium Grid execution  
+- `grouping.xml` – Group-based suite execution  
+- `mastersuite11.xml` – Master suite for full runs  
+- `para.xml` – Suite for Parallel execution  
+- `pom.xml` – Maven dependencies (Selenium, TestNG, Cucumber, ExtentReports, Mail API)
 
 ---
 
-## 🧭 Project Structure
+## Key Features
 
-sagarkeshavaQATest/
-├── crossbrowsertesting.xml # Suite configuration for CBT execution
+### ✔ Hybrid Automation Framework  
+Built on POM + Utilities + BDD + TestNG XML suites for clean and scalable automation.
 
-├── ddt.xml # Data-driven tests
+### ✔ Behavior-Driven Development (BDD)  
+Readable test scenarios using Cucumber feature files.
 
-├── griddemo.xml # Grid/remote execution suite
+### ✔ Cross-Browser and Parallel Execution  
+Using TestNG suites like `crossbrowsertesting.xml` and `para.xml`.
 
-├── grouping.xml # Test grouping suite
+### ✔ Data-Driven Testing  
+Handled using Excel/JSON through `testdata/`.
 
-├── mastersuite11.xml # Master aggregated suite
+### ✔ Selenium Grid Support  
+For distributed and parallel execution using `griddemo.xml`.
 
-├── para.xml # Parallel execution suite
+### ✔ CI/CD Integration  
+Jenkins pipeline built for continuous testing and nightly builds.
 
-├── pom.xml # Maven project file
+### ✔ Advanced Reporting  
+- ExtentReports with:
+  - Status logs  
+  - Screenshots  
+  - Timestamp  
+  - Author / Category tags  
+- TestNG default reports  
+- Automatic Email Notification after build completion
 
-├── src/
+---
 
-│ └── test/ # Test code packages
-
-├── testdata/ # CSV/Excel/data files
-
-├── test-output/ # Auto-generated TestNG results
-
-└── target/ # Maven build output
-
-## 🔧 Installation & Setup
+## How to Run the Project
 
 1. Clone the repo:
-   ```bash
-   git clone https://github.com/sagarkeshavaQATest/Project001.git
-   cd Project001
+```bash
+git clone <your-repo-url>
