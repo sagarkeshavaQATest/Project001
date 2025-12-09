@@ -15,11 +15,10 @@ A **hybrid automation framework** was designed using Page Object Model (POM), re
 
 The project also includes an integrated **CI/CD pipeline using Jenkins**, enabling:
 
-- Continuous execution  
-- Scheduled nightly runs  
+- Continuous execution   
 - Automatic ExtentReports generation  
 - Screenshots on failure  
-- Email notifications after every build  
+ 
 
 ---
 
